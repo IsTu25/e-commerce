@@ -1,0 +1,175 @@
+.cartitems {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .cartitems h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .cartitems-format-main,
+  .cartitems-format {
+    display: grid;
+    grid-template-columns: 80px 1fr 100px 80px 100px 50px;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .cartitems-format {
+    font-weight: normal;
+    font-size: 0.95rem;
+  }
+  
+  .carticon-product {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .cartitems-remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .cartitems-remove-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .cartitems-quantity {
+    background-color: #f0f0f0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.95rem;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 0.5rem 0;
+  }
+  
+  /* Cart Total Section */
+  .cartitems-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+  
+  .classitem-total {
+    flex: 1;
+    min-width: 280px;
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .classitem-total h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cartitem-total-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+  }
+  
+  /* Checkout Button */
+  .cartitems-down button {
+    padding: 0.8rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+  }
+  
+  .cartitems-down button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Promo Code Section */
+  .cartitems-promocode {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .cartitems-promocode p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cartitem-promobox {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .cartitem-promobox input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    width: 200px;
+  }
+  
+  .cartitem-promobox button {
+    padding: 0.6rem 1.2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cartitem-promobox button:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cartitems-format-main,
+    .cartitems-format {
+      grid-template-columns: repeat(3, 1fr);
+      font-size: 0.85rem;
+    }
+  
+    .cartitems-down {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .classitem-total {
+      width: 100%;
+    }
+  
+    .cartitems-down button {
+      width: 100%;
+    }
+  }
+  
